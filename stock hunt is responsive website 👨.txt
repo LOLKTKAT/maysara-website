@@ -1,0 +1,26 @@
+stock hunt is responsive website 👨‍💻 you can search for all stocks listed on the NASDAQ 🔍, by simply entering thier ticker symbol. also you save, delete items to a watchlist.
+
+react js 
+css
+apex charts
+framer motion
+yahoo finance API
+react router
+
+Movie app is a responsive website 👨‍💻 that allows 🫵 you to browse 👣, search 🔍, and add movies 🍿 to a watchlist movies.  
+react js
+styled components	
+TMDB API
+react router
+
+mySheets is a personal school project the allows students to view and download thier course material in one website.
+react js 
+react router dom 
+firebase 
+styled components
+
+
+portfolio is my personal portfolio website 
+react js 
+framer motion
+react router dom
