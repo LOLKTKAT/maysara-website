@@ -62,7 +62,9 @@ const About = () => {
           </div>
         </section>
         <div className="about__right-section">
+          <br />
           <h3 className="__show-on-big">about me</h3>
+          <br />
           <br />
           <div className="about__nav">
             <p
@@ -100,7 +102,6 @@ const About = () => {
               favorite food
             </p>
           </div>
-          <br />
           <br />
           <p className="about__paragraph">{TABS_INFO[count].paragraph}</p>
         </div>

@@ -195,6 +195,8 @@ export const LandingPage = () => {
             .landing-page__cta {
               display: flex;
               gap: 10px;
+              position: relative;
+              top: 30px;
             }
             .langing-page__contact-btn {
               all: unset;
@@ -249,6 +251,10 @@ export const LandingPage = () => {
             @media only screen and (max-width: 550px) {
               .developer {
                 margin-top: -14vw;
+              }
+              .landing-page__cta {
+                position: relative;
+                top: 50px;
               }
             }
             @media only screen and (max-width: 420px) {

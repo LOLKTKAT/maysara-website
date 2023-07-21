@@ -80,7 +80,7 @@
   display: flex;
   font-weight: 900;
   flex-direction: column;
-  width: 30%;
+  width: 45%;
   gap: -10px;
 }
 .carosel__section:nth-child(3) {
