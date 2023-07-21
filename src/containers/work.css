@@ -1,13 +1,14 @@
 .work {
   width: 100vw;
-  background-color: white;
-  gap: 20px;
-  color: black;
   height: 100vh;
+  background-color: white;
+  /* gap: 20px; */
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 24px;
+  justify-content: center;
+  /* padding-top: 24px; */
 }
 .work__container {
   max-width: 1020px;
@@ -73,13 +74,14 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0;
-  max-width: 60%;
+  width: 80%;
 }
 .carosel__section:nth-child(2) {
   display: flex;
-  background-color: red;
+  font-weight: 900;
   flex-direction: column;
-  gap: 10px;
+  width: 30%;
+  gap: -10px;
 }
 .carosel__section:nth-child(3) {
   display: flex;
@@ -111,18 +113,49 @@ button a {
 .work p {
   color: black;
 }
+.hide {
+  display: flex;
+}
+.show {
+  display: none;
+}
+.work__smallbtns {
+  display: flex;
+  gap: 12px;
+}
 @media only screen and (max-width: 800px) {
+  .show {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+  .work {
+    height: 115vh;
+    gap: 0px;
+  }
+  .work__container {
+    height: 85vh;
+  }
   .work__carousel {
     flex-direction: column-reverse;
-    height: 90vh;
+    height: 80vh;
+    padding: 10px 0px;
+    gap: 0px;
   }
   .carosel__section:nth-child(1) {
     height: auto;
     gap: 8px;
+    padding: 0 0 0 24px;
   }
   .carosel__section:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    width: 100%;
+    gap: 0px;
+    padding: 0 0 0 24px;
+  }
+  .carosel__section:nth-child(3) {
+    height: 20vw;
   }
 }

@@ -39,26 +39,30 @@ const About = () => {
   return (
     <article className="about">
       <div className="about__main">
-        <div className="about__image-container">
-          <AnimatePresence>
-            <motion.img
-              key={count}
-              initial={{ scale: 0 }}
-              animate={{ position: "relative", scale: 1 }}
-              exit={{
-                position: "absolute",
-                scale: 0,
-                maxHeight: "400px",
-                opacity: 0,
-              }}
-              transition={{}}
-              src={aboutPics[count]}
-              className="about__image"
-            />
-          </AnimatePresence>
-        </div>
+        <section className="about__image-section">
+          <h3 className="__show-on-small about__heading">about me</h3>
+          <br />
+          <div className="about__image-container">
+            <AnimatePresence>
+              <motion.img
+                key={count}
+                initial={{ scale: 0 }}
+                animate={{ position: "relative", scale: 1 }}
+                exit={{
+                  position: "absolute",
+                  scale: 0,
+                  maxHeight: "400px",
+                  opacity: 0,
+                }}
+                transition={{}}
+                src={aboutPics[count]}
+                className="about__image"
+              />
+            </AnimatePresence>
+          </div>
+        </section>
         <div className="about__right-section">
-          <h3>about me</h3>
+          <h3 className="__show-on-big">about me</h3>
           <br />
           <div className="about__nav">
             <p
@@ -117,6 +121,16 @@ const About = () => {
                 align-items: start;
                 gap: 60px
               }
+              .about__image-section { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%
+              }
+              .about__image-section .about__heading { 
+                align-items: start;
+              }
               .about__image-container {
                 height: 480px;
                 width: 360px;
@@ -135,7 +149,6 @@ const About = () => {
                 position: relative;
               }
               .about__right-section {
-                
               }
               .about__nav {
                 width: 600px;
@@ -165,11 +178,19 @@ const About = () => {
               @media only screen and (max-width: 800px) { 
                 .about__main {
                   flex-direction: column-reverse;
+                  gap: 24px;
                 }
                 .about__nav { 
-                  gap: 
-                  border: 1px solid blue;
+                  gap: 0; 
+                  width: 100vw;
                 }
+                .about__image-container {
+                  height: 280px;
+                  width: 210px;
+                }
+                .about__image-section { 
+                order: 2;
+              }
               }
               `}
       </style>

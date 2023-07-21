@@ -47,7 +47,7 @@ const NavBar = () => {
         <style>
           {`
          nav {
-           width: calc(100vw - 100px);
+           width: calc(var(--max-width) - 100px);
            left: 50%;
            top: 32px;
             transform: translateX(-50%);

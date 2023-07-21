@@ -29,7 +29,10 @@ const Work = () => {
     <article className="work">
       <h3 className="work__heading">Projects</h3>
       <main className="work__container">
-        <button onClick={() => handleDecrease()} className="carousel-button">
+        <button
+          onClick={() => handleDecrease()}
+          className="carousel-button hide"
+        >
           <img src={arrow} alt="arrow" className="carousel-arrow-left" />
         </button>
         <div className="div">
@@ -57,9 +60,8 @@ const Work = () => {
                 </div>
               </div>
               <div className="carosel__section">
-                {projects.map((item, i) => {
-                  console.log(item.technologies[i]);
-                  <h3>{item.technologies[i]}</h3>;
+                {projects[count].technologies.map((item) => {
+                  return <p>{item}</p>;
                 })}
               </div>
               <marquee
@@ -93,9 +95,13 @@ const Work = () => {
           </AnimatePresence>
         </div>
 
-        <button onClick={() => handleIncrease()} className="carousel-button">
+        <button
+          onClick={() => handleIncrease()}
+          className="carousel-button hide"
+        >
           <img src={arrow} alt="arrow" className="carousel-arrow-right" />
         </button>
+
         <style>{` 
               .work__carousel-btn:nth-child(1) {
                 background-color: ${style[0].yellow}
@@ -106,6 +112,20 @@ const Work = () => {
               
         `}</style>
       </main>
+      <section className="work__smallbtns">
+        <button
+          onClick={() => handleDecrease()}
+          className="carousel-button show"
+        >
+          <img src={arrow} alt="arrow" className="carousel-arrow-left" />
+        </button>
+        <button
+          onClick={() => handleIncrease()}
+          className="carousel-button show"
+        >
+          <img src={arrow} alt="arrow" className="carousel-arrow-right" />
+        </button>
+      </section>
     </article>
   );
 };

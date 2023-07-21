@@ -15,7 +15,7 @@ const Skills = () => {
             <h1>skills</h1>
             {/* <h4></h4> */}
           </div>
-          <section>
+          <section className="__show-on-big">
             <p>• Programming languages</p>
             <p>• Tools</p>
             <p>• Design tools</p>
@@ -63,7 +63,7 @@ const Skills = () => {
               color: black;
             }
             .container {
-              width: 100%;
+              width: var(--max-width);
               background-color: white;
               display: flex;
             }
@@ -141,20 +141,24 @@ const Skills = () => {
                 .skills {
                   flex-direction: column;
                 }
+                .skills-left-section p { 
+                  color: black;
+                }
                 .skills-left-section {
                   height: 50vh;
+                  background-color: white;
                   width: 100%;
                   border: none;
                   display: flex;
                   flex-direction: column;
                   justify-content: center;
                   align-items: center;
-                  padding: 0 0 48px 0;
+                  padding: 148px 0 48px 0;
                 } 
                 .skills-right-section {
                   margin-top: 32px;
                   width: 100%;
-                  height: 100vh;
+                  height: 88vh;
                   gap: 24px;
                   display: flex;
                   flex-direction: column;
@@ -162,6 +166,38 @@ const Skills = () => {
                   align-items: center;
                 }
               }
+              @media only screen and (max-width: 800px) {
+                .icon-container {
+                  height: 7vw;
+                  width: 7vw;
+              }
+              .skills-left-section {
+                height: 40vh;
+                padding: 0;
+              }
+              .skills-right-section {
+                width: 93%;
+                height: 50vh;
+                gap: 6px;
+                padding: 0 0 0 0;
+                margin-bottom: 32px;
+              }
+              @media only screen and (max-width: 550px) {
+
+                .icon-container {
+                  height: 11vw;
+                  width: 11vw;
+                }
+                .skills-right-section {
+                  width: 93%;
+                  height: 60vh;
+                  gap: 6px;
+                  padding: 0 0 0 0;
+                }
+                .skills-left-section {
+                  height: 30vh;
+                }
+              }              
             }`}
       </style>
       {/* </article> */}

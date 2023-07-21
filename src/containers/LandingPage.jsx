@@ -139,9 +139,9 @@ export const LandingPage = () => {
       </section>
       <section className="landing-page__second-section">
         <p className="landing-page__paragragh">
-          Intrested in Crafting digital 🖥️ experiences 🤯 with code and
-          creativity 🖼️ . Helping bring your ideas 💡 to life 🧬 with beautiful
-          web design and development 🏗️ .
+          My name is Maysara Basheer,Interested in Crafting digital 🖥️
+          experiences 🤯 with code and creativity 🖼️ . Helping bring your ideas
+          💡 to life 🧬 with beautiful web design and development 🏗️ .
         </p>
       </section>
       <section className="landing-page__cta">
@@ -150,7 +150,7 @@ export const LandingPage = () => {
       </section>
       <style>
         {`.landing-page {
-          max-width: calc(100vw - 160px);
+          max-width: calc(var(--max-width) - 160px);
           margin: 0 auto;
           display: flex;
           flex-direction: column;
@@ -179,15 +179,18 @@ export const LandingPage = () => {
               height: 8vw;
               width: 14vw;
               background-color: white
-              // background-position: center;
+              background-position: center;
               // background-size: cover;
               // background-repeat: no-repeat;
+              display: flex;
+              align-items: center;
               
             }
             .landing-page__inside-image {
               height: 100%;
               width: 100%;
               object-fit: cover;
+              object-position: center;
             }
             .landing-page__cta {
               display: flex;
@@ -245,7 +248,12 @@ export const LandingPage = () => {
             }
             @media only screen and (max-width: 550px) {
               .developer {
-                margin-top: -16vw;
+                margin-top: -14vw;
+              }
+            }
+            @media only screen and (max-width: 420px) {
+              .developer {
+                margin-top: -20vw;
               }
             }
             @media only screen and (max-width: 320px) {
