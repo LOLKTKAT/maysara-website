@@ -23,10 +23,14 @@ const Contact = () => {
           </div>
         </form>
         <br />
-        <h4>
-          Or mail to:{" "}
-          <a href="mailto:maysarabasheer@gmail.com">maysarabasheer@gmail.com</a>
-        </h4>
+        <section className="contact__email">
+          <h4>
+            Or mail to:{" "}
+            <a href="mailto:maysarabasheer@gmail.com">
+              maysarabasheer@gmail.com
+            </a>
+          </h4>
+        </section>
       </div>
     </article>
   );

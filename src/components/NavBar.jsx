@@ -57,7 +57,7 @@ const NavBar = () => {
             position: fixed;
           }
           .logo {
-            color: ${style[0].logo};
+            color: ${style[0].stroke};
             font-size: 18px;
             font-weight: 700;
           }

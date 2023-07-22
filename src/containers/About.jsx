@@ -36,6 +36,7 @@ const About = () => {
     "#4680ff",
     "#83ff31",
   ];
+
   return (
     <article className="about">
       <div className="about__main">
@@ -63,7 +64,7 @@ const About = () => {
         </section>
         <div className="about__right-section">
           <br />
-          <h3 className="__show-on-big">about me</h3>
+          <h3 className="__show-on-big ">about me</h3>
           <br />
           <br />
           <div className="about__nav">
@@ -177,13 +178,21 @@ const About = () => {
               }       
     
               @media only screen and (max-width: 800px) { 
+                .about {
+                  padding: 0 34px;
+                }
                 .about__main {
                   flex-direction: column-reverse;
                   gap: 24px;
                 }
                 .about__nav { 
-                  gap: 0; 
-                  width: 100vw;
+                  position: relative;
+                  width: 90vw;
+                  top: -40px;
+                }
+                .about__paragraph {
+                  position: relative;
+                  top: -40px;
                 }
                 .about__image-container {
                   height: 280px;
@@ -192,7 +201,16 @@ const About = () => {
                 .about__image-section { 
                 order: 2;
               }
+            }
+            @media only screen and (max-width: 500px) { 
+              .about {
+                padding: 0 16px;
+                height: 105vh;
               }
+              .about p {
+                font-size: 12px
+              }
+            }
               `}
       </style>
     </article>

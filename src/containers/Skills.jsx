@@ -167,6 +167,9 @@ const Skills = () => {
                 }
               }
               @media only screen and (max-width: 800px) {
+                .skills {
+                  padding: 0 16px;
+                }
                 .icon-container {
                   height: 7vw;
                   width: 7vw;

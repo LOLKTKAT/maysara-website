@@ -20,7 +20,8 @@
   justify-content: center;
 }
 .work__heading {
-  margin: 0 0 0 0;
+  position: relative;
+  top: 32px;
 }
 .carousel-button {
   all: unset;
@@ -133,6 +134,10 @@ button a {
   .work {
     height: 115vh;
     gap: 0px;
+    padding: 0 16px;
+  }
+  .work__heading {
+    top: 0;
   }
   .work__container {
     height: 85vh;
