@@ -25,23 +25,11 @@ export const LandingPage = () => {
     setMyTheme(0);
   }
 
-  let count = 0;
-  function handleHeroImageChange() {
-    setHeroImageCounter(count);
-    count += 1;
-    // if (count < 2) {
-    //   setHeroImageCounter((heroImageCounter) => (heroImageCounter += 1));
-    //   console.log(heroImageCounter);
-    // } else {
-    //   count = 0;
-    // }
-    console.log(heroImageCounter + " counter");
-  }
-
   useEffect(() => {
-    // setInterval(() => {
-    //   handleHeroImageChange();
-    // }, 5000);
+    setInterval(() => {
+      const random = Math.floor(Math.random() * 3);
+      setHeroImageCounter(random);
+    }, 3000);
   }, []);
 
   return (
@@ -118,7 +106,10 @@ export const LandingPage = () => {
             transition={{ delay: 1.7 }}
             className="landing-page__hero-image"
           >
-            <img
+            <motion.img
+              key={heroImageCounter}
+              initial={{ y: 10 }}
+              animate={{ y: 0 }}
               src={MOCKUPS[heroImageCounter]}
               className="landing-page__inside-image"
               alt=""
@@ -186,8 +177,8 @@ export const LandingPage = () => {
               
             }
             .landing-page__hero-image {
-              height: 8vw;
-              width: 14vw;
+              height: 7.5vw;
+              width: 12vw;
               background-color: white
               background-position: center;
               // background-size: cover;
@@ -243,12 +234,15 @@ export const LandingPage = () => {
             }
             .intital-load {
               background-color: ${style[0].red};
+              z-index: 1001;
             }
             .intital-load-1 {
               background-color: ${style[0].green};
+              z-index: 1002;
             }
             .intital-load-2 {
               background-color: ${style[0].yellow};
+              z-index: 1003;
             }
             @media only screen and (max-width: 750px) {
               .developer {

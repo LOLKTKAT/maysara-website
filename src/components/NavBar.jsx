@@ -30,8 +30,8 @@ const NavBar = () => {
               initial={{ strokeWidth: 0 }}
               animate={{ strokeWidth: 1.8 }}
               d="M4.375 12H30.625M4.375 6H30.625M13.125 18H30.625"
-              stroke-width="1.8"
-              stroke-linejoin="round"
+              strokeWidth="1.8"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
@@ -46,6 +46,7 @@ const NavBar = () => {
             justify-content: space-between;
             align-items: center;
             position: fixed;
+            z-index: 100
           }
           .logo {
             color: ${style[0].stroke};

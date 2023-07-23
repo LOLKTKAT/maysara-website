@@ -5,6 +5,6 @@ import img4 from "./IMG_8722.jpg";
 import img5 from "./IMG_3144_polarr.JPEG";
 import img6 from "./personal-pic.jpg";
 
-const aboutPics = [img1, img2, img3, img4, img5, img6];
+const aboutPics = [img6, img1, img2, img5, img4, img3];
 
 export default aboutPics;

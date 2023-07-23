@@ -3,14 +3,22 @@ import style from "../styles";
 import { projects } from "../utils";
 import screenshots from "../assets/projects-screenshots";
 import arrow from "../assets/icons/arrow-up-right.svg";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, spring } from "framer-motion";
 import "../index.css";
 import "./work.css";
 
 const Work = () => {
   let [count, setCount] = useState(0);
+  const [prev, setPrev] = useState([null, count]);
+  const [direction, setDirection] = useState("");
+  // const direction = count < prev[0] ? "increasing" : "decreasing";
+  // if (prev[1] !== count) {
+  //   setPrev([prev[1], count]);
+  //   console.log(direction);
+  // }
 
   function handleIncrease() {
+    setDirection("increasing");
     if (count < projects.length - 1) {
       setCount((count += 1));
     } else {
@@ -18,6 +26,7 @@ const Work = () => {
     }
   }
   function handleDecrease() {
+    setDirection("decreasing");
     if (count < 1) {
       setCount(projects.length - 1);
     } else {
@@ -36,13 +45,15 @@ const Work = () => {
           <img src={arrow} alt="arrow" className="carousel-arrow-left" />
         </button>
         <div className="work__carousel-wrapper">
-          <AnimatePresence>
+          <AnimatePresence custom={direction}>
             <motion.div
+              variants={variant}
               key={count}
-              initial={{ x: 1900, position: "" }}
-              animate={{ x: 0 }}
-              exit={{ x: -1900, position: "" }}
-              transition={{ duration: 0.2 }}
+              initial="start"
+              animate="animate"
+              exit="exit"
+              transition={{ type: "spring", duration: 0.6 }}
+              custom={direction}
               className="work__carousel"
             >
               <div className="carosel__section">
@@ -60,8 +71,8 @@ const Work = () => {
                 </div>
               </div>
               <div className="carosel__section">
-                {projects[count].technologies.map((item) => {
-                  return <p>{item}</p>;
+                {projects[count].technologies.map((item, i) => {
+                  return <p key={i}>{item}</p>;
                 })}
               </div>
               <marquee
@@ -128,6 +139,16 @@ const Work = () => {
       </section>
     </article>
   );
+};
+
+let variant = {
+  start: (direction) => ({
+    x: direction === "increasing" ? "-100vw" : "100vw",
+  }),
+  animate: { x: 0 },
+  exit: (direction) => ({
+    x: direction === "decreasing" ? "-100vw" : "100vw",
+  }),
 };
 
 export default Work;

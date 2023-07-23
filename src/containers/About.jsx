@@ -8,7 +8,7 @@ const TABS_INFO = [
   {
     paragraph:
       "My name is Maysara Basheer, I was born in Sudan but moved to Saudi Arabia when I was one. Throughout my life I was intersted in many things like: video games, football (soccer), tennis, and computers, when I turned 14 I got more and more interested in graphic design, which later helped me in my ui/ux and front-end development",
-    bgColor: "#aa5aff",
+    bgColor: "#4150F7",
   },
   {
     paragraph: "currently a student in elrazi university in Khartoum",
@@ -21,7 +21,7 @@ const TABS_INFO = [
   },
   {
     paragraph: "pizza",
-    bgColor: "#4680ff",
+    bgColor: "#aa5aff",
   },
 ];
 
@@ -29,10 +29,10 @@ const About = () => {
   const [count, setCount] = useState(0);
   const [hover, setHover] = useState(true);
   const bgColor = [
-    "#aa5aff",
+    "var(--primary)",
     "#FF5A5A",
     "#3ad451",
-    "#6976ff",
+    "#aa5aff",
     "#4680ff",
     "#83ff31",
   ];

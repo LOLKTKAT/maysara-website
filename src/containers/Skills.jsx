@@ -30,7 +30,7 @@ const Skills = () => {
         </section>
         <section className="skills-right-icon-section">
           {icons[0].programmingLanguage.map((icon, i) => {
-            return <SkillsIcon icon={icon} index={i} />;
+            return <SkillsIcon key={i} icon={icon} index={i} />;
           })}
         </section>
 
@@ -39,7 +39,7 @@ const Skills = () => {
         </section>
         <section className="skills-right-icon-section">
           {icons[0].tools.map((icon, i) => {
-            return <SkillsIcon icon={icon} index={i} />;
+            return <SkillsIcon key={i} icon={icon} index={i} />;
           })}
         </section>
 
@@ -48,7 +48,7 @@ const Skills = () => {
         </section>
         <section className="skills-right-icon-section">
           {icons[0].designTools.map((icon, i) => {
-            return <SkillsIcon icon={icon} index={i} />;
+            return <SkillsIcon key={i} icon={icon} index={i} />;
           })}
         </section>
       </div>

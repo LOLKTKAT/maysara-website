@@ -1,4 +1,4 @@
-import React, { useRef, useState, createContext } from "react";
+import React, { useRef, useState, createContext, forwardRef } from "react";
 import NavBar from "./components/NavBar";
 import About from "./containers/About";
 import Contact from "./containers/Contact";
@@ -30,11 +30,13 @@ function App() {
       <THEME.Provider value={{ myTheme, setMyTheme }}>
         <NavBar />
         <LandingPage myTheme={myTheme} />
-        <Skills ref={myRef} />
-        <Work ref={myRef} />
-        <About ref={myRef} />
-        <Marquee ref={myRef}>say hello say hello say hello say hello</Marquee>
-        <Contact ref={myRef} />
+        <Skills forwardRef={myRef} />
+        <Work forwardRef={myRef} />
+        <About forwardRef={myRef} />
+        <Marquee forwardRef={myRef}>
+          say hello say hello say hello say hello
+        </Marquee>
+        <Contact forwardRef={myRef} />
       </THEME.Provider>
       <style>
         {`
