@@ -137,17 +137,27 @@ export const LandingPage = () => {
           developer
         </motion.h1>
       </section>
-      <section className="landing-page__second-section">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.8 }}
+        className="landing-page__second-section"
+      >
         <p className="landing-page__paragragh">
-          My name is Maysara Basheer,Interested in Crafting digital 🖥️
+          My name is Maysara Basheer, Interested in Crafting digital 🖥️
           experiences 🤯 with code and creativity 🖼️ . Helping bring your ideas
           💡 to life 🧬 with beautiful web design and development 🏗️ .
         </p>
-      </section>
-      <section className="landing-page__cta">
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.9 }}
+        className="landing-page__cta"
+      >
         <button className="langing-page__contact-btn">Hire me</button>
         <button className="langing-page__contact-btn">Résumé</button>
-      </section>
+      </motion.section>
       <style>
         {`.landing-page {
           max-width: calc(var(--max-width) - 160px);

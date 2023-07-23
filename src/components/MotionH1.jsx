@@ -24,8 +24,6 @@ const MotionH1 = ({ children, delayAmount }) => {
           }}
           whileHover={{
             cursor: "pointer",
-            color: "transparent",
-            webkitTextStroke: "0.1px black",
           }}
           className="line-wrap-wrap"
         >

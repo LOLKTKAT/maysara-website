@@ -1,6 +1,7 @@
 const style = [
   {
-    backgroundColor: "#a047ff",
+    // backgroundColor: "#a047ff",
+    backgroundColor: "#681dff",
     red: "#FF5A5A",
     color: "#fff",
     green: "#8CE6DB",

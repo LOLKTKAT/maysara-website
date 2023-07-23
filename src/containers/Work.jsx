@@ -35,14 +35,14 @@ const Work = () => {
         >
           <img src={arrow} alt="arrow" className="carousel-arrow-left" />
         </button>
-        <div className="div">
+        <div className="work__carousel-wrapper">
           <AnimatePresence>
             <motion.div
               key={count}
-              initial={{ x: 900, position: "relative" }}
+              initial={{ x: 1900, position: "" }}
               animate={{ x: 0 }}
-              exit={{ x: -900, position: "absolute" }}
-              // transition={{ duration}}
+              exit={{ x: -1900, position: "" }}
+              transition={{ duration: 0.2 }}
               className="work__carousel"
             >
               <div className="carosel__section">

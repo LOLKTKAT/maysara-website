@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react";
 import humberger from "../assets/icons/humberger-menu.svg";
 import { AnimatePresence, motion } from "framer-motion";
 import MotionH1 from "./MotionH1";
-import Marquee from "./Marquee";
 import style from "../styles";
 import { THEME } from "../App";
 
@@ -36,14 +35,6 @@ const NavBar = () => {
             />
           </svg>
         </div>
-        <div className="dots">
-          <h6>.</h6>
-          <h6>.</h6>
-          <h6>.</h6>
-          <h6>.</h6>
-          <h6>.</h6>
-        </div>
-
         <style>
           {`
          nav {
@@ -107,14 +98,16 @@ const NavBar = () => {
           .line-wrap{
             width: fit-content;
           }
-          .line-wrap-wrap:hover {
-            // cursor: pointer;
-            // color: transparent;
-            // -webkit-text-stroke: 0.1px black;
+          .line-wrap-wrap {
             width: fit-content;
           }
           .menu__marquee {
             height: 100vh
+          }
+          @media only screen and (max-width: 800px) {
+            line-wrap-wrap {
+            font-size: 3vw !important;
+          }
           }
         `}
         </style>

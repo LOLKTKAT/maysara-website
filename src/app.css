@@ -1,8 +1,8 @@
 .App {
   height: 100vh;
   scroll-snap-type: y mandatory;
-  overflow: hidden;
-  overflow-y: scroll;
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
   scroll-behavior: smooth;
   scroll-padding: 0vh;
 }
