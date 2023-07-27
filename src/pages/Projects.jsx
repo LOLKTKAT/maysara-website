@@ -134,9 +134,7 @@ const Projects = () => {
               >
                 <nav>
                   <Link to="/">
-                    <div style={{ color: "black" }} className="logo">
-                      MB
-                    </div>
+                    <div className="logo">MB</div>
                   </Link>
                   <img
                     onClick={() => setShowMenu(!showMenu)}

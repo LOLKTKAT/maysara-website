@@ -177,3 +177,10 @@ button a {
     height: 20vw;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .work__smallbtns {
+    display: flex;
+    gap: 60px;
+  }
+}

@@ -16,9 +16,7 @@ export const ContactPage = () => {
     <div className="contact-page">
       <nav>
         <Link to="/">
-          <div style={{ color: "black" }} className="logo">
-            MB
-          </div>
+          <div className="logo">MB</div>
         </Link>
         <div onClick={() => setShowMenu(!showMenu)} className="humberger-menu">
           <svg
