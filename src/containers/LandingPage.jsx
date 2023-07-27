@@ -220,7 +220,7 @@ export const LandingPage = () => {
 
             }
             .landing-page a {
-              color: black;
+              color: black !important;
             }
             .langing-page__contact-btn:nth-child(2) {
               background-color: white;
