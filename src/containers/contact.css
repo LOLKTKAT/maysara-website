@@ -16,6 +16,7 @@
   gap: 16px;
 }
 .mailto {
+  color: white !important;
   text-decoration: underline;
 }
 .first-name {

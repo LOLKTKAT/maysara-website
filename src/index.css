@@ -137,7 +137,7 @@ h4 {
   font-family: "DM Sans", sans-serif;
 }
 a {
-  color: var(--yellow);
+  color: black !important;
 }
 
 input[type="text"] {
