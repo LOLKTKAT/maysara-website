@@ -59,6 +59,12 @@ const NavBar = () => {
             font-weight: 700;
             cursor: pointer;
           }
+          .menu-logo {
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+            
+          }
           .humberger-menu {
             stroke: ${style[0].stroke};
             cursor: pointer;
@@ -139,7 +145,7 @@ const NavBar = () => {
               className="menu"
             >
               <nav>
-                <div style={{ color: "black" }} className="logo">
+                <div style={{ color: "black" }} className="menu-logo">
                   MB
                 </div>
                 <img

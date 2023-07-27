@@ -150,7 +150,7 @@ export const LandingPage = () => {
           <button className="langing-page__contact-btn">Hire me</button>
         </Link>
         <button className="langing-page__contact-btn">
-          <a href="https://drive.google.com/file/d/1nmrl4roMW_nCZ8S2VtmMyZor9D2tkGGu/view?usp=sharing">
+          <a href="https://docs.google.com/document/d/e/2PACX-1vQY-g1NNL8GVxk4T-SxNwu5_JWW6OLZAf3HbhRoHBla3amwtnDEhl-2huiFM4SqvbmwouUkchoEn9nK/pub">
             Résumé
           </a>
         </button>
@@ -218,6 +218,9 @@ export const LandingPage = () => {
               font-size: 16px;
               font-weight: 600;
 
+            }
+            .landing-page a {
+              color: black;
             }
             .langing-page__contact-btn:nth-child(2) {
               background-color: white;

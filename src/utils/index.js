@@ -66,7 +66,7 @@ export const projects = [
       "framer motion",
       "react router dom",
     ],
-    gitHubRipo: "https://github.com/LOLKTKAT/portfolio",
+    gitHubRipo: "https://github.com/LOLKTKAT/maysara-website",
     next: "Stock Hunt",
     type: "(personal)",
   },
