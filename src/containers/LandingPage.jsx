@@ -38,7 +38,7 @@ export const LandingPage = () => {
         className="intital-load"
         initial={{
           backgroudColor: style[0].yellow,
-          height: "100%",
+          height: "130%",
           width: "100%",
           position: "fixed",
         }}
@@ -55,7 +55,7 @@ export const LandingPage = () => {
         className="intital-load-1"
         initial={{
           backgroudColor: style[0].yellow,
-          height: "100%",
+          height: "130%",
           width: "100%",
           position: "fixed",
         }}
@@ -72,7 +72,7 @@ export const LandingPage = () => {
         className="intital-load-2"
         initial={{
           backgroudColor: style[0].yellow,
-          height: "100%",
+          height: "130%",
           width: "100%",
           position: "fixed",
         }}
