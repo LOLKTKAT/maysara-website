@@ -13,7 +13,6 @@ const Skills = () => {
           <img src={skillsIcon} className="skills__icon" />
           <div>
             <h1>skills</h1>
-            {/* <h4></h4> */}
           </div>
           <section className="__show-on-big">
             <p>• Programming languages</p>
@@ -136,6 +135,7 @@ const Skills = () => {
               .skills__programming-icon {
                 height: 60%;
                 filter: grayscale(100%);
+                mix-blend-mode: multiply;
               }
               @media only screen and (max-width: 800px) {
                 .skills {

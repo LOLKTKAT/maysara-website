@@ -16,6 +16,10 @@ import weblfow from "./webflow-original (2).svg";
 import weblfowBna from "./webflow-original.svg";
 import xd from "./xd-plain (2).svg";
 import xdBna from "./xd-plain.svg";
+import photoshop from "./photoshop.png";
+import sql from "./sql.png";
+import firebase from "./firebase.png";
+import github from "./github.png";
 
 export const icons = [
   {
@@ -52,21 +56,21 @@ export const icons = [
       },
       {
         name: "sql",
-        colored: framerMotion,
-        blackandwhite: framerMotionBna,
+        colored: sql,
+        blackandwhite: sql,
       },
     ],
 
     tools: [
       {
         name: "gitHub",
-        colored: framerMotion,
-        blackandwhite: framerMotionBna,
+        colored: github,
+        blackandwhite: github,
       },
       {
         name: "firebase",
-        colored: framerMotion,
-        blackandwhite: framerMotionBna,
+        colored: firebase,
+        blackandwhite: firebase,
       },
     ],
 
@@ -89,7 +93,7 @@ export const icons = [
       {
         name: "Photshop",
         colored: xd,
-        blackandwhite: xdBna,
+        blackandwhite: photoshop,
       },
     ],
   },

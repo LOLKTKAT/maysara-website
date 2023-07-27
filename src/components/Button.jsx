@@ -9,7 +9,7 @@ const Button = ({ children }) => {
         {`
         .btn {
             all: unset;
-            color: black;
+            color: black !important;
             border: 2px solid black;
             margin-right: 10px;
             padding: 4px 32px; 

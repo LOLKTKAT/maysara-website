@@ -149,14 +149,11 @@ export const LandingPage = () => {
         <Link to="/contact">
           <button className="langing-page__contact-btn">Hire me</button>
         </Link>
-        <button className="langing-page__contact-btn">
-          <a
-            className="resume-btn"
-            href="https://docs.google.com/document/d/e/2PACX-1vQY-g1NNL8GVxk4T-SxNwu5_JWW6OLZAf3HbhRoHBla3amwtnDEhl-2huiFM4SqvbmwouUkchoEn9nK/pub"
-          >
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQY-g1NNL8GVxk4T-SxNwu5_JWW6OLZAf3HbhRoHBla3amwtnDEhl-2huiFM4SqvbmwouUkchoEn9nK/pub">
+          <button className="langing-page__contact-btn resume-btn">
             Résumé
-          </a>
-        </button>
+          </button>
+        </a>
       </motion.section>
       <style>
         {`.landing-page {
@@ -226,7 +223,8 @@ export const LandingPage = () => {
               color: black;
             }
             .resume-btn {
-              color: black !important;
+              background-color: white; 
+              color: black!important;
             }
             .langing-page__contact-btn:nth-child(2) {
               background-color: white;
