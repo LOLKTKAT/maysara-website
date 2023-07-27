@@ -162,6 +162,9 @@ textPath {
 .__show-on-small {
   display: none;
 }
+a {
+  text-decoration: none;
+}
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: 12vw;

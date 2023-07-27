@@ -1,0 +1,18 @@
+.App {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-padding: 0vh;
+}
+.App article {
+  scroll-snap-align: start;
+  scroll-margin: 0vh;
+  scroll-snap-stop: always;
+}
+@media only screen and (max-width: 800px) {
+  .App {
+    scroll-snap-type: none;
+  }
+}

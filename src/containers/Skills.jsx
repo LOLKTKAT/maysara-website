@@ -25,7 +25,7 @@ const Skills = () => {
       <div className="skills-right-section">
         <section>
           <h3 className="skills-right-section-heading">
-            programming languages
+            Programming languages
           </h3>
         </section>
         <section className="skills-right-icon-section">
@@ -35,7 +35,7 @@ const Skills = () => {
         </section>
 
         <section>
-          <h3 className="skills-right-section-heading">tools</h3>
+          <h3 className="skills-right-section-heading">Tools</h3>
         </section>
         <section className="skills-right-icon-section">
           {icons[0].tools.map((icon, i) => {
@@ -44,7 +44,7 @@ const Skills = () => {
         </section>
 
         <section>
-          <h3 className="skills-right-section-heading">design tools</h3>
+          <h3 className="skills-right-section-heading">Design tools</h3>
         </section>
         <section className="skills-right-icon-section">
           {icons[0].designTools.map((icon, i) => {

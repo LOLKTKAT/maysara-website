@@ -1,26 +1,24 @@
 import React, { useState } from "react";
 import aboutPics from "../assets/about-pics";
-import { AnimatePresence, easeIn, motion } from "framer-motion";
-import { projects } from "../utils";
-import screenshots from "../assets/projects-screenshots";
+import { AnimatePresence, motion } from "framer-motion";
 
 const TABS_INFO = [
   {
     paragraph:
-      "My name is Maysara Basheer, I was born in Sudan but moved to Saudi Arabia when I was one. Throughout my life I was intersted in many things like: video games, football (soccer), tennis, and computers, when I turned 14 I got more and more interested in graphic design, which later helped me in my ui/ux and front-end development",
+      "My name is Maysara Basheer, I was born in Sudan but grew up in Saudi Arabia. Throughout my life 🧬 I was intersted in many things like: video games 🎮 , football (soccer) ⚽, tennis 🎾, and computers 🖥️, when I turned 14 I got more and more interested in graphic design, which later helped me in my UI/UX and front-end development",
     bgColor: "#4150F7",
   },
   {
-    paragraph: "currently a student in elrazi university in Khartoum",
+    paragraph: "Elrazi university in Khartoum 📍",
     bgColor: "#FF5A5A",
   },
   {
     paragraph:
-      "if you want to be my friend you can talk to me about, football, MMA, or men's fashion, and ofcourse anything web related",
+      "If you want to be my friend 😊 you can talk 🗣️ to me about, football, MMA, or men's fashion 👔, and of course anything computer related",
     bgColor: "#3ad451",
   },
   {
-    paragraph: "pizza",
+    paragraph: "Pizza 🍕 ",
     bgColor: "#aa5aff",
   },
 ];
@@ -41,7 +39,7 @@ const About = () => {
     <article className="about">
       <div className="about__main">
         <section className="about__image-section">
-          <h3 className="__show-on-small about__heading">about me</h3>
+          <h3 className="__show-on-small about__heading">About me</h3>
           <br />
           <div className="about__image-container">
             <AnimatePresence>
@@ -64,7 +62,7 @@ const About = () => {
         </section>
         <div className="about__right-section">
           <br />
-          <h3 className="__show-on-big ">about me</h3>
+          <h3 className="__show-on-big ">About me</h3>
           <br />
           <br />
           <div className="about__nav">
@@ -72,14 +70,14 @@ const About = () => {
               className={count === 0 ? "about__nav-active" : "about__nav-tab"}
               onClick={() => setCount(0)}
             >
-              story
+              Story
             </p>
             <motion.div whileHover={() => setHover(!hover)}>
               <p
                 className={count === 1 ? "about__nav-active" : "about__nav-tab"}
                 onClick={() => setCount(1)}
               >
-                education
+                Education
               </p>
               <motion.div
                 whileHover={{
@@ -94,13 +92,13 @@ const About = () => {
               className={count === 2 ? "about__nav-active" : "about__nav-tab"}
               onClick={() => setCount(2)}
             >
-              favorite topic
+              Favorite topic
             </p>
             <p
               className={count === 3 ? "about__nav-active" : "about__nav-tab"}
               onClick={() => setCount(3)}
             >
-              favorite food
+              Favorite food
             </p>
           </div>
           <br />
@@ -115,13 +113,14 @@ const About = () => {
                 align-items: center;
                 height: 100vh;
                 width: 100vw;
+                color: white;
               }
               .about__main {
                 margin: 0px auto;
                 max-width: 1020px;
                 display: flex;
                 align-items: start;
-                gap: 60px
+                gap: 60px;
               }
               .about__image-section { 
                 display: flex;
@@ -176,7 +175,6 @@ const About = () => {
                 border-radius: 270px;
                 background-color: transparent;
               }       
-    
               @media only screen and (max-width: 800px) { 
                 .about {
                   padding: 0 34px;

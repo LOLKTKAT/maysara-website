@@ -1,21 +1,19 @@
-import React, { useState, useContext } from "react";
-import humberger from "../assets/icons/humberger-menu.svg";
-import { AnimatePresence, motion } from "framer-motion";
-import MotionH1 from "./MotionH1";
+import React, { createContext, useState } from "react";
+import Contact from "../containers/Contact";
+import "./contact-page.css";
+import Work from "../containers/Work";
+import MotionH1 from "../components/MotionH1";
+import { motion, AnimatePresence } from "framer-motion";
 import style from "../styles";
-import { THEME } from "../pages/Home";
+import humberger from "../assets/icons/humberger-menu.svg";
+import "../index.css";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+export const ContactPage = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const { myTheme, setMyTheme } = useContext(THEME);
-
-  if (showMenu == true) {
-    setMyTheme(2);
-  }
 
   return (
-    <>
+    <div className="contact-page">
       <nav>
         <Link to="/">
           <div style={{ color: "black" }} className="logo">
@@ -31,7 +29,6 @@ const NavBar = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <motion.path
-              key={myTheme}
               initial={{ strokeWidth: 0 }}
               animate={{ strokeWidth: 1.8 }}
               d="M4.375 12H30.625M4.375 6H30.625M13.125 18H30.625"
@@ -54,13 +51,13 @@ const NavBar = () => {
             z-index: 100
           }
           .logo {
-            color: ${style[0].stroke} !important;
+            color: white;
             font-size: 18px;
-            font-weight: 700;
             cursor: pointer;
+            font-weight: 700;
           }
           .humberger-menu {
-            stroke: ${style[0].stroke};
+            stroke: white;
             cursor: pointer;
           }     
           .menu {
@@ -123,7 +120,6 @@ const NavBar = () => {
         {showMenu && (
           <>
             <motion.section
-              onClick={() => console.log(myTheme)}
               key={showMenu}
               initial={{ height: 0 }}
               animate={{ height: "100%" }}
@@ -172,8 +168,7 @@ const NavBar = () => {
           </>
         )}
       </AnimatePresence>
-    </>
+      <Contact />
+    </div>
   );
 };
-
-export default NavBar;

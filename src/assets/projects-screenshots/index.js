@@ -10,6 +10,10 @@ import stockHunt1 from "./stock-hunt (1).png";
 import stockHunt2 from "./stock-hunt (2).png";
 import stockHunt3 from "./stock-hunt (3).png";
 import stockHunt4 from "./stock-hunt (4).png";
+import portfolio1 from "./portfolio (1).png";
+import portfolio2 from "./portfolio (2).png";
+import portfolio3 from "./portfolio (3).png";
+import portfolio4 from "./portfolio (4).png";
 
 const screenshots = [
   [stockHunt1, stockHunt2, stockHunt3, stockHunt4],
@@ -20,6 +24,6 @@ const screenshots = [
     movieAppScreenshot4,
   ],
   [mysheets1, mysheets2, mysheets3, mysheets4],
-  [mysheets1, mysheets2, mysheets3, mysheets4],
+  [portfolio2, portfolio1, portfolio3, portfolio4],
 ];
 export default screenshots;

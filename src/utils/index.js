@@ -1,9 +1,6 @@
-import { icons } from "../assets/icons/icons";
-import screenshots from "../assets/projects-screenshots";
-
 export const projects = [
   {
-    siteName: "stock hunt",
+    siteName: "Stock hunt 🔍",
     url: "https://stock-hunt.netlify.app/",
     screenshots: "",
     discription:
@@ -22,11 +19,11 @@ export const projects = [
     type: "(personal)",
   },
   {
-    siteName: "movie app",
+    siteName: "Movie app 🍿",
     url: "https://reactjsmovieappio.netlify.app/",
     screenshots: "",
     discription:
-      "Movie app is a responsive website 👨‍💻 that allows 🫵 you to browse 👣, search 🔍, and add movies 🍿 to a watchlist movies.",
+      "Movie app is a responsive website 🔍 that allows 🫵 you to browse 👣, search 🔍, and add movies 🍿 to a watchlist movies.",
     technologies: [
       "HTML",
       "CSS",
@@ -40,11 +37,11 @@ export const projects = [
     type: "(personal)",
   },
   {
-    siteName: "mySheets",
+    siteName: "mySheets 🏫",
     url: "https://reactmysheets.netlify.app",
     screenshots: "",
     discription:
-      "mySheets is a personal school project that allows students to view and download their course material in one simple intuitive website",
+      "mySheets is a personal school 🏫 project that allows students 🧑‍🎓 to view and download their course material in one ☝️ simple intuitive website 🌐",
     technologies: [
       "HTML",
       "CSS",
@@ -58,10 +55,10 @@ export const projects = [
     type: "(personal)",
   },
   {
-    siteName: "Portfolio",
+    siteName: "Portfolio 🏞️",
     url: "/",
     screenshots: "",
-    discription: "Portfolio is my personal portfolio website ",
+    discription: "Portfolio 🏞️ is my personal portfolio website ",
     technologies: [
       "HTML",
       "CSS",

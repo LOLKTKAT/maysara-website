@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import style from "../styles";
-import arrow from "../assets/icons/arrow-up-right.svg";
 import { easeIn, easeInOut, easeOut, motion } from "framer-motion";
-import { THEME } from "../App";
+import { THEME } from "../pages/Home";
 import MOCKUPS from "../assets/mockups";
+import { Link } from "react-router-dom";
 export const LandingPage = () => {
   const secRef = useRef();
   const [heroImageCounter, setHeroImageCounter] = useState(0);
@@ -136,8 +136,8 @@ export const LandingPage = () => {
       >
         <p className="landing-page__paragragh">
           My name is Maysara Basheer, Interested in Crafting digital 🖥️
-          experiences 🤯 with code and creativity 🖼️ . Helping bring your ideas
-          💡 to life 🧬 with beautiful web design and development 🏗️ .
+          experiences 🤯 with code and creativity 🖼️. I help to bring your ideas
+          💡 to life 🧬 with beautiful web design and development 🏗️.
         </p>
       </motion.section>
       <motion.section
@@ -146,8 +146,14 @@ export const LandingPage = () => {
         transition={{ delay: 1.9 }}
         className="landing-page__cta"
       >
-        <button className="langing-page__contact-btn">Hire me</button>
-        <button className="langing-page__contact-btn">Résumé</button>
+        <Link to="/contact">
+          <button className="langing-page__contact-btn">Hire me</button>
+        </Link>
+        <button className="langing-page__contact-btn">
+          <a href="https://drive.google.com/file/d/1nmrl4roMW_nCZ8S2VtmMyZor9D2tkGGu/view?usp=sharing">
+            Résumé
+          </a>
+        </button>
       </motion.section>
       <style>
         {`.landing-page {

@@ -15,7 +15,9 @@
   flex-direction: column;
   gap: 16px;
 }
-
+.mailto {
+  text-decoration: underline;
+}
 .first-name {
   grid-area: "a";
   all: unset;

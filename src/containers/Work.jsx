@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import style from "../styles";
+import { THEME } from "../pages/Home";
 import { projects } from "../utils";
 import screenshots from "../assets/projects-screenshots";
 import arrow from "../assets/icons/arrow-up-right.svg";
@@ -11,11 +12,6 @@ const Work = () => {
   let [count, setCount] = useState(0);
   const [prev, setPrev] = useState([null, count]);
   const [direction, setDirection] = useState("");
-  // const direction = count < prev[0] ? "increasing" : "decreasing";
-  // if (prev[1] !== count) {
-  //   setPrev([prev[1], count]);
-  //   console.log(direction);
-  // }
 
   function handleIncrease() {
     setDirection("increasing");

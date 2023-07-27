@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import Button from "../components/Button";
 import "./contact.css";
+import emailjs, { sendForm } from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_mzjr9zn",
+        "template_8vm9s7p",
+        form.current,
+        "A9Me4Hy4vbvLCVOUY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Massage Sent Successfully!!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Massage Failed to send!!");
+        }
+      );
+  };
   return (
     <article className="contact">
       <div className="contact__heading">
@@ -10,14 +34,34 @@ const Contact = () => {
         <p>contact me here!</p>
       </div>
       <div className="contact__form">
-        <form action="" className="contact__form">
+        <form className="contact__form" ref={form} onSubmit={sendEmail}>
           <div className="form__first-row">
-            <input type="text" className="first-name" placeholder="Name" />
-            <input type="text" className="email" placeholder="Email Address" />
+            <input
+              type="text"
+              className="first-name"
+              placeholder="Name"
+              name="from_name"
+            />
+            <input
+              type="text"
+              className="email"
+              placeholder="Email Address"
+              name="email"
+            />
           </div>
-          <input type="text" className="subject" placeholder="Subject" />
+          <input
+            type="text"
+            className="subject"
+            placeholder="Subject"
+            name="subject"
+          />
           <br />
-          <textarea type="text" className="massage" placeholder="Massage" />
+          <textarea
+            type="text"
+            className="massage"
+            placeholder="Massage"
+            name="massage"
+          />
           <div className="contact-btn">
             <Button>Send</Button>
           </div>
@@ -26,7 +70,7 @@ const Contact = () => {
         <section className="contact__email">
           <h4>
             Or mail to:{" "}
-            <a href="mailto:maysarabasheer@gmail.com">
+            <a className="mailto" href="mailto:maysarabasheer@gmail.com">
               maysarabasheer@gmail.com
             </a>
           </h4>
