@@ -149,7 +149,7 @@ export const LandingPage = () => {
         <Link to="/contact">
           <button className="langing-page__contact-btn">Hire me</button>
         </Link>
-        <a href="https://docs.google.com/document/d/e/2PACX-1vQY-g1NNL8GVxk4T-SxNwu5_JWW6OLZAf3HbhRoHBla3amwtnDEhl-2huiFM4SqvbmwouUkchoEn9nK/pub">
+        <a href="https://docs.google.com/document/d/1abxntplQzcT5Grqgc4E6HuDbGOqcGJSd/edit?usp=sharing&ouid=100256585019889268946&rtpof=true&sd=true">
           <button className="langing-page__contact-btn resume-btn">
             Résumé
           </button>

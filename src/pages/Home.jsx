@@ -1,4 +1,4 @@
-import React, { useRef, useState, createContext, forwardRef } from "react";
+import React, { useRef, useState, createContext } from "react";
 import NavBar from "../components/NavBar";
 import About from "../containers/About";
 import Contact from "../containers/Contact";

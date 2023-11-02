@@ -4,7 +4,7 @@ export const projects = [
     url: "https://stock-hunt.netlify.app/",
     screenshots: "",
     discription:
-      "stock hunt is responsive website 👨‍💻 you can search for all stocks listed on the NASDAQ 🔍, by simply entering thier ticker symbol. also you save, delete items to a watchlist.",
+      "Stock Hunt is a responsive website that allows you to easily search for 😅 all stocks 💰 listed on the NASDAQ by simply entering their 👏 ticker symbol. Additionally, you 👈 have 🈶 the ability to save and delete 🔋 items to a watchlist for 🌼 your convenience. 🏪",
     technologies: [
       "HTML",
       "CSS",
@@ -23,7 +23,7 @@ export const projects = [
     url: "https://reactjsmovieappio.netlify.app/",
     screenshots: "",
     discription:
-      "Movie app is a responsive website 🔍 that allows 🫵 you to browse 👣, search 🔍, and add movies 🍿 to a watchlist movies.",
+      "The Movie App is a responsive website that allows you 🫵 to browse 👣, search 🔍, and add movies 🍿 to a watchlist.",
     technologies: [
       "HTML",
       "CSS",
@@ -41,7 +41,7 @@ export const projects = [
     url: "https://reactmysheets.netlify.app",
     screenshots: "",
     discription:
-      "mySheets is a personal school 🏫 project that allows students 🧑‍🎓 to view and download their course material in one ☝️ simple intuitive website 🌐",
+      "MySheets is a personal school 🚌 project that 🙇🚟 allows students to view and download 📲 their course 🐴 material in one simple and intuitive website.",
     technologies: [
       "HTML",
       "CSS",

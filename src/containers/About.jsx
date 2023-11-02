@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const TABS_INFO = [
   {
     paragraph:
-      "My name is Maysara Basheer, I was born in Sudan but grew up in Saudi Arabia. Throughout my life 🧬 I was intersted in many things like: video games 🎮 , football (soccer) ⚽, tennis 🎾, and computers 🖥️, when I turned 14 I got more and more interested in graphic design, which later helped me in my UI/UX and front-end development",
+      "I'm Maysara Basheer. Sudanese by birth and raised in the vibrant tapestry of Saudi Arabia. Life's been a mix of diverse passions: video games 🎮, football ⚽, tennis 🎾, and the world of computers 🖥️.At 14, graphic design became my fascination, a passion that eventually shaped my path in UI/UX and front-end development. It's this blend of interests that continues to fuel my journey, where design meets technology in crafting seamless user experiences.",
     bgColor: "#4150F7",
   },
   {
@@ -14,7 +14,7 @@ const TABS_INFO = [
   },
   {
     paragraph:
-      "If you want to be my friend 😊 you can talk 🗣️ to me about, football, MMA, or men's fashion 👔, and of course anything computer related",
+      "If you wanna spark a friendship! 😊 If you fancy a chat 🗣️, let's dive into the thrill of football, the rush of MMA, or the elegance of men's fashion 👔. And hey, I'm always tuned in for tech talks, so anything computer-related is right up my alley.",
     bgColor: "#3ad451",
   },
   {
